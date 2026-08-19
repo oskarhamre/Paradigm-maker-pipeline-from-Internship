@@ -1,0 +1,1442 @@
+{
+  "creationDate": 1786344090169,
+  "isFavorite": false,
+  "isPersonal": true,
+  "variables": {
+    "OnBlockLength": 20000
+  },
+  "settings": {
+    "name": "Pediatric StoryListening_KPop",
+    "timeToRepeat": 2000,
+    "volumes": 130,
+    "averageBlockLength": 20000,
+    "slices": 34
+  },
+  "languages": [
+    "Swedish"
+  ],
+  "description": {
+    "Swedish": "Paradigm name\n\nDescription:\nAlternating AI-generated and backwards Audio , 20 seconds each;\n1 OFF + 6 cycles (B AB AB AB AB AB AB);\n\nBased on recommendations from ASFNR (American Society for Functional Neuroradiology). \n\n---\nInstructions:\nPlease instruct patients appropriately and conduct patient training to ensure patients understand their responsibilities!\nPatients will hear the story read. Intermittently there will be blocks of backwards audio. Instruct the subject to listen attentively throughout the task to both types of audio.\n---\nClick 'Run' if you are ready to scan, or 'Preview' to view without the scanner.\nRemember to start the paradigm before you start the scan."
+  },
+  "versions": [
+    "VisualSystem",
+    "VisualSystem-HD",
+    "LCD-HD",
+    "LCD-4K"
+  ],
+  "position": [
+    {
+      "name": "MidPos",
+      "horizontal": "center",
+      "vertical": "center"
+    }
+  ],
+  "defaults": {
+    "backGroundColor": "Black",
+    "defaultTextPosition": "MidPos",
+    "defaultPicturePosition": "MidPos",
+    "foreGroundColor": "White",
+    "font": "Arial",
+    "language": "Swedish",
+    "version": "LCD-HD",
+    "versions": {
+      "VisualSystem": {
+        "fontSize": 58
+      },
+      "VisualSystem-HD": {
+        "fontSize": 104
+      },
+      "LCD-HD": {
+        "fontSize": 104
+      },
+      "LCD-4K": {
+        "fontSize": 208
+      }
+    }
+  },
+  "BOLDSettings": {
+    "contrasts": {
+      "contrast": {
+        "attributes": {
+          "name": "Story Listening ON"
+        },
+        "value": 1
+      }
+    },
+    "process": {
+      "preProcOn": true,
+      "glmOn": true,
+      "sliceTime": {
+        "sliceTimeOn": false,
+        "interleavedOn": false,
+        "ascendingOn": true,
+        "oddOn": false
+      },
+      "motion": {
+        "motionOn": true
+      },
+      "gaussian": {
+        "smoothOn": true,
+        "gaussDim": "3D",
+        "x_dir": "",
+        "y_dir": "",
+        "z_dir": ""
+      },
+      "temporal": {
+        "temporalOn": true,
+        "cutOff": 180
+      }
+    }
+  },
+  "slide": {
+    "Swedish-VisualSystem": [
+      {
+        "name": "Start",
+        "text": [
+          {
+            "value": "Passive story listening\n\nstarting soon",
+            "horizontal": "center",
+            "vertical": "center",
+            "fontSize": 66,
+            "fontFamily": "Arial",
+            "color": "White"
+          }
+        ],
+        "clear": false,
+        "creationDate": 1705416377274,
+        "backGroundColor": "Black",
+        "id": "a78f9384-5207-4426-a5da-356fba4d6865"
+      },
+      {
+        "name": "Audio1",
+        "clear": false,
+        "creationDate": 1786609004209,
+        "backGroundColor": "Black",
+        "id": "f64e84c5-0cfc-4991-84f9-4d743c3dc762",
+        "picture": [
+          {
+            "value": "./pictures/Cross.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 40.00000000000003,
+            "width": 39.99999999999998
+          }
+        ],
+        "sound": {
+          "value": "./audio/KPop-1.wav"
+        }
+      },
+      {
+        "name": "ReverseAudio1",
+        "clear": false,
+        "creationDate": 1786609004209,
+        "backGroundColor": "Black",
+        "id": "a002ab94-bf74-4c4a-8739-cab525507fe0",
+        "picture": [
+          {
+            "value": "./pictures/Cross.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 40.00000000000003,
+            "width": 39.99999999999998
+          }
+        ],
+        "sound": {
+          "value": "./audio/KPop-1_backwards.wav"
+        }
+      },
+      {
+        "name": "Audio2",
+        "clear": false,
+        "creationDate": 1786609004210,
+        "backGroundColor": "Black",
+        "id": "60579f08-7518-49a3-8826-69da6949da55",
+        "picture": [
+          {
+            "value": "./pictures/Cross.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 40.00000000000003,
+            "width": 39.99999999999998
+          }
+        ],
+        "sound": {
+          "value": "./audio/KPop-2.wav"
+        }
+      },
+      {
+        "name": "ReverseAudio2",
+        "clear": false,
+        "creationDate": 1786609004210,
+        "backGroundColor": "Black",
+        "id": "6a27eac2-c348-4017-bcb4-f31bbd8f3527",
+        "picture": [
+          {
+            "value": "./pictures/Cross.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 40.00000000000003,
+            "width": 39.99999999999998
+          }
+        ],
+        "sound": {
+          "value": "./audio/KPop-2_backwards.wav"
+        }
+      },
+      {
+        "name": "Audio3",
+        "clear": false,
+        "creationDate": 1786609004210,
+        "backGroundColor": "Black",
+        "id": "8efcb59a-ea21-4857-93a3-3544c3d063d7",
+        "picture": [
+          {
+            "value": "./pictures/Cross.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 40.00000000000003,
+            "width": 39.99999999999998
+          }
+        ],
+        "sound": {
+          "value": "./audio/KPop-3.wav"
+        }
+      },
+      {
+        "name": "ReverseAudio3",
+        "clear": false,
+        "creationDate": 1786609004210,
+        "backGroundColor": "Black",
+        "id": "9cd7b016-e6f2-4c54-8742-e21f77bd0073",
+        "picture": [
+          {
+            "value": "./pictures/Cross.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 40.00000000000003,
+            "width": 39.99999999999998
+          }
+        ],
+        "sound": {
+          "value": "./audio/KPop-3_backwards.wav"
+        }
+      },
+      {
+        "name": "Audio4",
+        "clear": false,
+        "creationDate": 1786609004210,
+        "backGroundColor": "Black",
+        "id": "3ceb189a-9b2e-4fe7-b0bd-16f6487a230b",
+        "picture": [
+          {
+            "value": "./pictures/Cross.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 40.00000000000003,
+            "width": 39.99999999999998
+          }
+        ],
+        "sound": {
+          "value": "./audio/KPop-4.wav"
+        }
+      },
+      {
+        "name": "ReverseAudio4",
+        "clear": false,
+        "creationDate": 1786609004210,
+        "backGroundColor": "Black",
+        "id": "39a7a6fe-e724-46ff-b81b-74644d34c578",
+        "picture": [
+          {
+            "value": "./pictures/Cross.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 40.00000000000003,
+            "width": 39.99999999999998
+          }
+        ],
+        "sound": {
+          "value": "./audio/KPop-4_backwards.wav"
+        }
+      },
+      {
+        "name": "Audio5",
+        "clear": false,
+        "creationDate": 1786609004210,
+        "backGroundColor": "Black",
+        "id": "e601d6d0-41ee-4ded-acf6-e7e8760d31f1",
+        "picture": [
+          {
+            "value": "./pictures/Cross.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 40.00000000000003,
+            "width": 39.99999999999998
+          }
+        ],
+        "sound": {
+          "value": "./audio/KPop-5.wav"
+        }
+      },
+      {
+        "name": "ReverseAudio5",
+        "clear": false,
+        "creationDate": 1786609004210,
+        "backGroundColor": "Black",
+        "id": "1f4e769c-30f1-4431-a31d-3585c550ec1d",
+        "picture": [
+          {
+            "value": "./pictures/Cross.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 40.00000000000003,
+            "width": 39.99999999999998
+          }
+        ],
+        "sound": {
+          "value": "./audio/KPop-5_backwards.wav"
+        }
+      },
+      {
+        "name": "Audio6",
+        "clear": false,
+        "creationDate": 1786609004210,
+        "backGroundColor": "Black",
+        "id": "93d5c340-261c-4872-bf3b-356b6fadb5ed",
+        "picture": [
+          {
+            "value": "./pictures/Cross.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 40.00000000000003,
+            "width": 39.99999999999998
+          }
+        ],
+        "sound": {
+          "value": "./audio/KPop-6.wav"
+        }
+      },
+      {
+        "name": "ReverseAudio6",
+        "clear": false,
+        "creationDate": 1786609004210,
+        "backGroundColor": "Black",
+        "id": "7607180a-b199-44e3-8dc8-21b0fdba6609",
+        "picture": [
+          {
+            "value": "./pictures/Cross.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 40.00000000000003,
+            "width": 39.99999999999998
+          }
+        ],
+        "sound": {
+          "value": "./audio/KPop-6_backwards.wav"
+        }
+      }
+    ],
+    "Swedish-VisualSystem-HD": [
+      {
+        "name": "Start",
+        "text": [
+          {
+            "value": "Passive story listening\n\nstarting soon",
+            "horizontal": "center",
+            "vertical": "center",
+            "fontSize": 104,
+            "fontFamily": "Arial",
+            "color": "White"
+          }
+        ],
+        "clear": false,
+        "creationDate": 1705416388900,
+        "backGroundColor": "Black",
+        "id": "a5154f7d-07df-4652-b24c-18f7fa915036"
+      },
+      {
+        "name": "Audio1",
+        "clear": false,
+        "creationDate": 1786609004210,
+        "backGroundColor": "Black",
+        "id": "f6048f02-6422-454b-8eb1-a326f598dd34",
+        "picture": [
+          {
+            "value": "./pictures/Cross_lcd.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 73.00000000000003,
+            "width": 74.00000000000001
+          }
+        ],
+        "sound": {
+          "value": "./audio/KPop-1.wav"
+        }
+      },
+      {
+        "name": "ReverseAudio1",
+        "clear": false,
+        "creationDate": 1786609004210,
+        "backGroundColor": "Black",
+        "id": "a3a225c5-c5bb-476c-bf32-b94859f74a68",
+        "picture": [
+          {
+            "value": "./pictures/Cross_lcd.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 73.00000000000003,
+            "width": 74.00000000000001
+          }
+        ],
+        "sound": {
+          "value": "./audio/KPop-1_backwards.wav"
+        }
+      },
+      {
+        "name": "Audio2",
+        "clear": false,
+        "creationDate": 1786609004210,
+        "backGroundColor": "Black",
+        "id": "020ec612-523c-406d-a4cc-23a0b9a4c71f",
+        "picture": [
+          {
+            "value": "./pictures/Cross_lcd.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 73.00000000000003,
+            "width": 74.00000000000001
+          }
+        ],
+        "sound": {
+          "value": "./audio/KPop-2.wav"
+        }
+      },
+      {
+        "name": "ReverseAudio2",
+        "clear": false,
+        "creationDate": 1786609004210,
+        "backGroundColor": "Black",
+        "id": "8a334f99-dcb6-438c-8ffc-f08fbfe6c05b",
+        "picture": [
+          {
+            "value": "./pictures/Cross_lcd.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 73.00000000000003,
+            "width": 74.00000000000001
+          }
+        ],
+        "sound": {
+          "value": "./audio/KPop-2_backwards.wav"
+        }
+      },
+      {
+        "name": "Audio3",
+        "clear": false,
+        "creationDate": 1786609004210,
+        "backGroundColor": "Black",
+        "id": "6c1da73a-912e-44eb-ba46-864772b31ee7",
+        "picture": [
+          {
+            "value": "./pictures/Cross_lcd.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 73.00000000000003,
+            "width": 74.00000000000001
+          }
+        ],
+        "sound": {
+          "value": "./audio/KPop-3.wav"
+        }
+      },
+      {
+        "name": "ReverseAudio3",
+        "clear": false,
+        "creationDate": 1786609004210,
+        "backGroundColor": "Black",
+        "id": "15632126-b552-42b6-80e2-409564122f9f",
+        "picture": [
+          {
+            "value": "./pictures/Cross_lcd.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 73.00000000000003,
+            "width": 74.00000000000001
+          }
+        ],
+        "sound": {
+          "value": "./audio/KPop-3_backwards.wav"
+        }
+      },
+      {
+        "name": "Audio4",
+        "clear": false,
+        "creationDate": 1786609004210,
+        "backGroundColor": "Black",
+        "id": "c162faaa-6e61-4588-b033-7b044b72f6f9",
+        "picture": [
+          {
+            "value": "./pictures/Cross_lcd.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 73.00000000000003,
+            "width": 74.00000000000001
+          }
+        ],
+        "sound": {
+          "value": "./audio/KPop-4.wav"
+        }
+      },
+      {
+        "name": "ReverseAudio4",
+        "clear": false,
+        "creationDate": 1786609004210,
+        "backGroundColor": "Black",
+        "id": "22df6a88-9ae0-4cac-a96e-5e374d6dba58",
+        "picture": [
+          {
+            "value": "./pictures/Cross_lcd.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 73.00000000000003,
+            "width": 74.00000000000001
+          }
+        ],
+        "sound": {
+          "value": "./audio/KPop-4_backwards.wav"
+        }
+      },
+      {
+        "name": "Audio5",
+        "clear": false,
+        "creationDate": 1786609004210,
+        "backGroundColor": "Black",
+        "id": "ccfdbda1-2804-4868-a76b-cf2a73d64ab5",
+        "picture": [
+          {
+            "value": "./pictures/Cross_lcd.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 73.00000000000003,
+            "width": 74.00000000000001
+          }
+        ],
+        "sound": {
+          "value": "./audio/KPop-5.wav"
+        }
+      },
+      {
+        "name": "ReverseAudio5",
+        "clear": false,
+        "creationDate": 1786609004210,
+        "backGroundColor": "Black",
+        "id": "56fcfdde-fcde-4c2f-b081-680b48b5e32a",
+        "picture": [
+          {
+            "value": "./pictures/Cross_lcd.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 73.00000000000003,
+            "width": 74.00000000000001
+          }
+        ],
+        "sound": {
+          "value": "./audio/KPop-5_backwards.wav"
+        }
+      },
+      {
+        "name": "Audio6",
+        "clear": false,
+        "creationDate": 1786609004210,
+        "backGroundColor": "Black",
+        "id": "bff04246-fc89-4044-9d65-668ea171d757",
+        "picture": [
+          {
+            "value": "./pictures/Cross_lcd.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 73.00000000000003,
+            "width": 74.00000000000001
+          }
+        ],
+        "sound": {
+          "value": "./audio/KPop-6.wav"
+        }
+      },
+      {
+        "name": "ReverseAudio6",
+        "clear": false,
+        "creationDate": 1786609004210,
+        "backGroundColor": "Black",
+        "id": "249fd8be-26d0-407a-a57d-be17e7e3bba4",
+        "picture": [
+          {
+            "value": "./pictures/Cross_lcd.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 73.00000000000003,
+            "width": 74.00000000000001
+          }
+        ],
+        "sound": {
+          "value": "./audio/KPop-6_backwards.wav"
+        }
+      }
+    ],
+    "Swedish-LCD-HD": [
+      {
+        "name": "Start",
+        "text": [
+          {
+            "value": "Passive story listening\n\nstarting soon",
+            "horizontal": "center",
+            "vertical": "center",
+            "fontSize": 104,
+            "fontFamily": "Arial",
+            "color": "White"
+          }
+        ],
+        "clear": false,
+        "creationDate": 1705416395588,
+        "backGroundColor": "Black",
+        "id": "4bf1d137-b76e-41cd-8dba-5f5c0cc139c6"
+      },
+      {
+        "name": "Audio1",
+        "clear": false,
+        "creationDate": 1786609004210,
+        "backGroundColor": "Black",
+        "id": "b13879c6-5744-4354-abaf-4ffb6d362014",
+        "modificationDate": 1786361459208,
+        "picture": [
+          {
+            "value": "/pictures/Cross_lcd.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 72.00000000000001,
+            "width": 72.00000000000001
+          }
+        ],
+        "sound": {
+          "value": "./audio/KPop-1.wav"
+        }
+      },
+      {
+        "name": "ReverseAudio1",
+        "clear": false,
+        "creationDate": 1786609004210,
+        "backGroundColor": "Black",
+        "id": "f02f869c-e49c-4354-98a4-1861b6cbe186",
+        "modificationDate": 1786361459208,
+        "picture": [
+          {
+            "value": "/pictures/Cross_lcd.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 72.00000000000001,
+            "width": 72.00000000000001
+          }
+        ],
+        "sound": {
+          "value": "./audio/KPop-1_backwards.wav"
+        }
+      },
+      {
+        "name": "Audio2",
+        "clear": false,
+        "creationDate": 1786609004210,
+        "backGroundColor": "Black",
+        "id": "2de83d40-5ec0-4489-9315-358815f787b9",
+        "modificationDate": 1786361459208,
+        "picture": [
+          {
+            "value": "/pictures/Cross_lcd.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 72.00000000000001,
+            "width": 72.00000000000001
+          }
+        ],
+        "sound": {
+          "value": "./audio/KPop-2.wav"
+        }
+      },
+      {
+        "name": "ReverseAudio2",
+        "clear": false,
+        "creationDate": 1786609004210,
+        "backGroundColor": "Black",
+        "id": "3b0451d0-a6e5-4a69-821e-65ef63f7a52a",
+        "modificationDate": 1786361459208,
+        "picture": [
+          {
+            "value": "/pictures/Cross_lcd.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 72.00000000000001,
+            "width": 72.00000000000001
+          }
+        ],
+        "sound": {
+          "value": "./audio/KPop-2_backwards.wav"
+        }
+      },
+      {
+        "name": "Audio3",
+        "clear": false,
+        "creationDate": 1786609004210,
+        "backGroundColor": "Black",
+        "id": "386bc8ad-90b1-4950-ae05-2e60559eea3a",
+        "modificationDate": 1786361459208,
+        "picture": [
+          {
+            "value": "/pictures/Cross_lcd.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 72.00000000000001,
+            "width": 72.00000000000001
+          }
+        ],
+        "sound": {
+          "value": "./audio/KPop-3.wav"
+        }
+      },
+      {
+        "name": "ReverseAudio3",
+        "clear": false,
+        "creationDate": 1786609004210,
+        "backGroundColor": "Black",
+        "id": "7ff1503b-ff95-4b7a-b436-c4051168662a",
+        "modificationDate": 1786361459208,
+        "picture": [
+          {
+            "value": "/pictures/Cross_lcd.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 72.00000000000001,
+            "width": 72.00000000000001
+          }
+        ],
+        "sound": {
+          "value": "./audio/KPop-3_backwards.wav"
+        }
+      },
+      {
+        "name": "Audio4",
+        "clear": false,
+        "creationDate": 1786609004210,
+        "backGroundColor": "Black",
+        "id": "d3a946fb-fbd4-477c-8e28-6fd0d8794a89",
+        "modificationDate": 1786361459208,
+        "picture": [
+          {
+            "value": "/pictures/Cross_lcd.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 72.00000000000001,
+            "width": 72.00000000000001
+          }
+        ],
+        "sound": {
+          "value": "./audio/KPop-4.wav"
+        }
+      },
+      {
+        "name": "ReverseAudio4",
+        "clear": false,
+        "creationDate": 1786609004210,
+        "backGroundColor": "Black",
+        "id": "dba17fb8-401b-4bda-b634-e5ed126f325e",
+        "modificationDate": 1786361459208,
+        "picture": [
+          {
+            "value": "/pictures/Cross_lcd.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 72.00000000000001,
+            "width": 72.00000000000001
+          }
+        ],
+        "sound": {
+          "value": "./audio/KPop-4_backwards.wav"
+        }
+      },
+      {
+        "name": "Audio5",
+        "clear": false,
+        "creationDate": 1786609004210,
+        "backGroundColor": "Black",
+        "id": "03388cfc-c2d9-4c61-b3d1-a2942f8b2646",
+        "modificationDate": 1786361459208,
+        "picture": [
+          {
+            "value": "/pictures/Cross_lcd.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 72.00000000000001,
+            "width": 72.00000000000001
+          }
+        ],
+        "sound": {
+          "value": "./audio/KPop-5.wav"
+        }
+      },
+      {
+        "name": "ReverseAudio5",
+        "clear": false,
+        "creationDate": 1786609004210,
+        "backGroundColor": "Black",
+        "id": "24742a42-8bab-4dbc-8adc-23bca07344c1",
+        "modificationDate": 1786361459208,
+        "picture": [
+          {
+            "value": "/pictures/Cross_lcd.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 72.00000000000001,
+            "width": 72.00000000000001
+          }
+        ],
+        "sound": {
+          "value": "./audio/KPop-5_backwards.wav"
+        }
+      },
+      {
+        "name": "Audio6",
+        "clear": false,
+        "creationDate": 1786609004210,
+        "backGroundColor": "Black",
+        "id": "9bf3659c-67b3-4bea-b2e9-bfac85df1bb9",
+        "modificationDate": 1786361459208,
+        "picture": [
+          {
+            "value": "/pictures/Cross_lcd.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 72.00000000000001,
+            "width": 72.00000000000001
+          }
+        ],
+        "sound": {
+          "value": "./audio/KPop-6.wav"
+        }
+      },
+      {
+        "name": "ReverseAudio6",
+        "clear": false,
+        "creationDate": 1786609004210,
+        "backGroundColor": "Black",
+        "id": "e3a81c53-c622-4d63-a6c3-6e9d46de63a7",
+        "modificationDate": 1786361459208,
+        "picture": [
+          {
+            "value": "/pictures/Cross_lcd.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 72.00000000000001,
+            "width": 72.00000000000001
+          }
+        ],
+        "sound": {
+          "value": "./audio/KPop-6_backwards.wav"
+        }
+      }
+    ],
+    "Swedish-LCD-4K": [
+      {
+        "name": "Start",
+        "text": [
+          {
+            "value": "Passive story listening\n\nstarting soon",
+            "horizontal": "center",
+            "vertical": "center",
+            "fontSize": 208,
+            "fontFamily": "Arial",
+            "color": "White"
+          }
+        ],
+        "clear": false,
+        "creationDate": 1705438228291,
+        "backGroundColor": "Black",
+        "id": "e0331dd2-a359-4914-bff7-11a7ce44ca94"
+      },
+      {
+        "name": "Audio1",
+        "clear": false,
+        "creationDate": 1786609004210,
+        "backGroundColor": "Black",
+        "id": "13af0fb7-5d23-41bd-b569-4226b7e2708c",
+        "picture": [
+          {
+            "value": "./pictures/Cross_lcd.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 121.63139914744079,
+            "width": 123.29758269740604
+          }
+        ],
+        "sound": {
+          "value": "./audio/KPop-1.wav"
+        }
+      },
+      {
+        "name": "ReverseAudio1",
+        "clear": false,
+        "creationDate": 1786609004210,
+        "backGroundColor": "Black",
+        "id": "a136251f-060d-4299-b474-64ebe2176292",
+        "picture": [
+          {
+            "value": "./pictures/Cross_lcd.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 121.63139914744079,
+            "width": 123.29758269740604
+          }
+        ],
+        "sound": {
+          "value": "./audio/KPop-1_backwards.wav"
+        }
+      },
+      {
+        "name": "Audio2",
+        "clear": false,
+        "creationDate": 1786609004211,
+        "backGroundColor": "Black",
+        "id": "b0c1977a-cac5-446f-9e5b-540aafca32fb",
+        "picture": [
+          {
+            "value": "./pictures/Cross_lcd.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 121.63139914744079,
+            "width": 123.29758269740604
+          }
+        ],
+        "sound": {
+          "value": "./audio/KPop-2.wav"
+        }
+      },
+      {
+        "name": "ReverseAudio2",
+        "clear": false,
+        "creationDate": 1786609004211,
+        "backGroundColor": "Black",
+        "id": "d652cac2-5c01-4c6c-a413-d45f29836ce4",
+        "picture": [
+          {
+            "value": "./pictures/Cross_lcd.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 121.63139914744079,
+            "width": 123.29758269740604
+          }
+        ],
+        "sound": {
+          "value": "./audio/KPop-2_backwards.wav"
+        }
+      },
+      {
+        "name": "Audio3",
+        "clear": false,
+        "creationDate": 1786609004211,
+        "backGroundColor": "Black",
+        "id": "679da9cf-602d-4dc6-9d94-2c39c9fd500c",
+        "picture": [
+          {
+            "value": "./pictures/Cross_lcd.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 121.63139914744079,
+            "width": 123.29758269740604
+          }
+        ],
+        "sound": {
+          "value": "./audio/KPop-3.wav"
+        }
+      },
+      {
+        "name": "ReverseAudio3",
+        "clear": false,
+        "creationDate": 1786609004211,
+        "backGroundColor": "Black",
+        "id": "ebd125c1-c689-4cd3-ad6c-0be0a963c361",
+        "picture": [
+          {
+            "value": "./pictures/Cross_lcd.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 121.63139914744079,
+            "width": 123.29758269740604
+          }
+        ],
+        "sound": {
+          "value": "./audio/KPop-3_backwards.wav"
+        }
+      },
+      {
+        "name": "Audio4",
+        "clear": false,
+        "creationDate": 1786609004211,
+        "backGroundColor": "Black",
+        "id": "9769a507-d9f3-4196-b27d-e0a631962440",
+        "picture": [
+          {
+            "value": "./pictures/Cross_lcd.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 121.63139914744079,
+            "width": 123.29758269740604
+          }
+        ],
+        "sound": {
+          "value": "./audio/KPop-4.wav"
+        }
+      },
+      {
+        "name": "ReverseAudio4",
+        "clear": false,
+        "creationDate": 1786609004211,
+        "backGroundColor": "Black",
+        "id": "e26d46b2-0df3-48e4-8c70-1ec439bc27eb",
+        "picture": [
+          {
+            "value": "./pictures/Cross_lcd.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 121.63139914744079,
+            "width": 123.29758269740604
+          }
+        ],
+        "sound": {
+          "value": "./audio/KPop-4_backwards.wav"
+        }
+      },
+      {
+        "name": "Audio5",
+        "clear": false,
+        "creationDate": 1786609004211,
+        "backGroundColor": "Black",
+        "id": "aaa0aea9-b391-4f32-81cb-d3a0ad2b31df",
+        "picture": [
+          {
+            "value": "./pictures/Cross_lcd.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 121.63139914744079,
+            "width": 123.29758269740604
+          }
+        ],
+        "sound": {
+          "value": "./audio/KPop-5.wav"
+        }
+      },
+      {
+        "name": "ReverseAudio5",
+        "clear": false,
+        "creationDate": 1786609004211,
+        "backGroundColor": "Black",
+        "id": "74ad6242-fd10-4a9d-98cf-110ab2d795e1",
+        "picture": [
+          {
+            "value": "./pictures/Cross_lcd.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 121.63139914744079,
+            "width": 123.29758269740604
+          }
+        ],
+        "sound": {
+          "value": "./audio/KPop-5_backwards.wav"
+        }
+      },
+      {
+        "name": "Audio6",
+        "clear": false,
+        "creationDate": 1786609004211,
+        "backGroundColor": "Black",
+        "id": "734d9ff1-a5fa-4fac-891e-e0427545e614",
+        "picture": [
+          {
+            "value": "./pictures/Cross_lcd.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 121.63139914744079,
+            "width": 123.29758269740604
+          }
+        ],
+        "sound": {
+          "value": "./audio/KPop-6.wav"
+        }
+      },
+      {
+        "name": "ReverseAudio6",
+        "clear": false,
+        "creationDate": 1786609004211,
+        "backGroundColor": "Black",
+        "id": "11da422b-953f-471f-b68d-0887c1c47fab",
+        "picture": [
+          {
+            "value": "./pictures/Cross_lcd.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 121.63139914744079,
+            "width": 123.29758269740604
+          }
+        ],
+        "sound": {
+          "value": "./audio/KPop-6_backwards.wav"
+        }
+      }
+    ]
+  },
+  "trial": [
+    {
+      "name": "Start",
+      "show": [
+        {
+          "item": "Start",
+          "overlap": true
+        }
+      ],
+      "register": {
+        "key": [
+          "s"
+        ]
+      },
+      "id": "1f90e2cb-0dc1-412b-b13a-44fd6f256a2f"
+    },
+    {
+      "name": "Reverse1",
+      "show": [
+        {
+          "item": "ReverseAudio1",
+          "duration": "$OnBlockLength"
+        }
+      ],
+      "condition": 0,
+      "register": {
+        "key": []
+      },
+      "id": "8b3db994-b5f0-4092-9a6f-467f14891f1c"
+    },
+    {
+      "name": "Audio1",
+      "show": [
+        {
+          "item": "Audio1",
+          "duration": "$OnBlockLength"
+        }
+      ],
+      "condition": 0,
+      "register": {
+        "key": []
+      },
+      "id": "05323a3e-1a24-4929-8071-1d047ab89ff5"
+    },
+    {
+      "name": "Reverse2",
+      "show": [
+        {
+          "item": "ReverseAudio2",
+          "duration": "$OnBlockLength"
+        }
+      ],
+      "condition": 0,
+      "register": {
+        "key": []
+      },
+      "id": "9be000da-4ad3-400f-aaa0-3051e9a29f4c"
+    },
+    {
+      "name": "Audio2",
+      "show": [
+        {
+          "item": "Audio2",
+          "duration": "$OnBlockLength"
+        }
+      ],
+      "condition": 0,
+      "register": {
+        "key": []
+      },
+      "id": "8e84372c-bee1-499e-b1c6-c07c5add1c22"
+    },
+    {
+      "name": "Reverse3",
+      "show": [
+        {
+          "item": "ReverseAudio3",
+          "duration": "$OnBlockLength"
+        }
+      ],
+      "condition": 0,
+      "register": {
+        "key": []
+      },
+      "id": "e055cd6d-c5ce-4469-b6f0-0465023afe80"
+    },
+    {
+      "name": "Audio3",
+      "show": [
+        {
+          "item": "Audio3",
+          "duration": "$OnBlockLength"
+        }
+      ],
+      "condition": 0,
+      "register": {
+        "key": []
+      },
+      "id": "e470b0c4-e58e-4240-a686-dc8de2ca637f"
+    },
+    {
+      "name": "Reverse4",
+      "show": [
+        {
+          "item": "ReverseAudio4",
+          "duration": "$OnBlockLength"
+        }
+      ],
+      "condition": 0,
+      "register": {
+        "key": []
+      },
+      "id": "f739d45f-9d7a-45d9-b652-b399d5bf4a60"
+    },
+    {
+      "name": "Audio4",
+      "show": [
+        {
+          "item": "Audio4",
+          "duration": "$OnBlockLength"
+        }
+      ],
+      "condition": 0,
+      "register": {
+        "key": []
+      },
+      "id": "d87591b4-d091-4ae4-ad49-afbe1b1d444d"
+    },
+    {
+      "name": "Reverse5",
+      "show": [
+        {
+          "item": "ReverseAudio5",
+          "duration": "$OnBlockLength"
+        }
+      ],
+      "condition": 0,
+      "register": {
+        "key": []
+      },
+      "id": "fa3ce260-6363-4a87-a11e-e5d7d1171fdc"
+    },
+    {
+      "name": "Audio5",
+      "show": [
+        {
+          "item": "Audio5",
+          "duration": "$OnBlockLength"
+        }
+      ],
+      "condition": 0,
+      "register": {
+        "key": []
+      },
+      "id": "cad1640f-34d4-494d-9582-af120e5c35e3"
+    },
+    {
+      "name": "Reverse6",
+      "show": [
+        {
+          "item": "ReverseAudio6",
+          "duration": "$OnBlockLength"
+        }
+      ],
+      "condition": 0,
+      "register": {
+        "key": []
+      },
+      "id": "107e3a71-f906-4148-9486-1af5eedb552b"
+    },
+    {
+      "name": "Audio6",
+      "show": [
+        {
+          "item": "Audio6",
+          "duration": "$OnBlockLength"
+        }
+      ],
+      "condition": 0,
+      "register": {
+        "key": []
+      },
+      "id": "d6d9fa2a-c64a-4b45-9910-f3d4e11d7b47"
+    },
+    {
+      "name": "Reverse7",
+      "show": [
+        {
+          "item": "ReverseAudio1",
+          "duration": "$OnBlockLength"
+        }
+      ],
+      "condition": 0,
+      "register": {
+        "key": []
+      },
+      "id": "73e34bdc-f541-4345-a40f-395097153429"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Reverse1",
+      "condition": 0,
+      "order": 0,
+      "repetitions": 0,
+      "trials": [
+        "8b3db994-b5f0-4092-9a6f-467f14891f1c"
+      ],
+      "id": "a22eef36-b578-446d-8165-3567dcf72b8e"
+    },
+    {
+      "name": "Story1",
+      "condition": 1,
+      "order": 0,
+      "repetitions": 0,
+      "trials": [
+        "05323a3e-1a24-4929-8071-1d047ab89ff5"
+      ],
+      "id": "ca927506-720c-43b4-9a57-c3332622c2cf"
+    },
+    {
+      "name": "Reverse2",
+      "condition": 0,
+      "order": 0,
+      "repetitions": 0,
+      "trials": [
+        "9be000da-4ad3-400f-aaa0-3051e9a29f4c"
+      ],
+      "id": "9ce00be9-8fca-4eaf-9c65-d50c8f00ae11"
+    },
+    {
+      "name": "Story2",
+      "condition": 1,
+      "order": 0,
+      "repetitions": 0,
+      "trials": [
+        "8e84372c-bee1-499e-b1c6-c07c5add1c22"
+      ],
+      "id": "3c8bb2f2-a166-4bc3-8ebb-38a8043b4a72"
+    },
+    {
+      "name": "Reverse3",
+      "condition": 0,
+      "order": 0,
+      "repetitions": 0,
+      "trials": [
+        "e055cd6d-c5ce-4469-b6f0-0465023afe80"
+      ],
+      "id": "249a8b60-b7b2-461f-a0ea-ba09700dc4d8"
+    },
+    {
+      "name": "Story3",
+      "condition": 1,
+      "order": 0,
+      "repetitions": 0,
+      "trials": [
+        "e470b0c4-e58e-4240-a686-dc8de2ca637f"
+      ],
+      "id": "dda82760-e39b-4a20-8a90-eede55070690"
+    },
+    {
+      "name": "Reverse4",
+      "condition": 0,
+      "order": 0,
+      "repetitions": 0,
+      "trials": [
+        "f739d45f-9d7a-45d9-b652-b399d5bf4a60"
+      ],
+      "id": "1961340c-4065-49e7-a6fa-9b77303ed098"
+    },
+    {
+      "name": "Story4",
+      "condition": 1,
+      "order": 0,
+      "repetitions": 0,
+      "trials": [
+        "d87591b4-d091-4ae4-ad49-afbe1b1d444d"
+      ],
+      "id": "87260011-ad95-434c-afe9-8bef26c43b33"
+    },
+    {
+      "name": "Reverse5",
+      "condition": 0,
+      "order": 0,
+      "repetitions": 0,
+      "trials": [
+        "fa3ce260-6363-4a87-a11e-e5d7d1171fdc"
+      ],
+      "id": "d83de2f6-423c-4166-97ed-7235b2570094"
+    },
+    {
+      "name": "Story5",
+      "condition": 1,
+      "order": 0,
+      "repetitions": 0,
+      "trials": [
+        "cad1640f-34d4-494d-9582-af120e5c35e3"
+      ],
+      "id": "437770af-898d-4b24-9cdb-67a971012a3d"
+    },
+    {
+      "name": "Reverse6",
+      "condition": 0,
+      "order": 0,
+      "repetitions": 0,
+      "trials": [
+        "107e3a71-f906-4148-9486-1af5eedb552b"
+      ],
+      "id": "f6e0373b-902b-4ebf-b4df-4fb7f3c7b095"
+    },
+    {
+      "name": "Story6",
+      "condition": 1,
+      "order": 0,
+      "repetitions": 0,
+      "trials": [
+        "d6d9fa2a-c64a-4b45-9910-f3d4e11d7b47"
+      ],
+      "id": "d83df074-0256-47d6-aaaf-757eb054426a"
+    },
+    {
+      "name": "Reverse7",
+      "condition": 0,
+      "order": 0,
+      "repetitions": 0,
+      "trials": [
+        "73e34bdc-f541-4345-a40f-395097153429"
+      ],
+      "id": "50ba568b-f5ce-45b6-89c6-f72e9e2688e1"
+    }
+  ],
+  "session": {
+    "run": [
+      "1f90e2cb-0dc1-412b-b13a-44fd6f256a2f",
+      "a22eef36-b578-446d-8165-3567dcf72b8e",
+      "ca927506-720c-43b4-9a57-c3332622c2cf",
+      "9ce00be9-8fca-4eaf-9c65-d50c8f00ae11",
+      "3c8bb2f2-a166-4bc3-8ebb-38a8043b4a72",
+      "249a8b60-b7b2-461f-a0ea-ba09700dc4d8",
+      "dda82760-e39b-4a20-8a90-eede55070690",
+      "1961340c-4065-49e7-a6fa-9b77303ed098",
+      "87260011-ad95-434c-afe9-8bef26c43b33",
+      "d83de2f6-423c-4166-97ed-7235b2570094",
+      "437770af-898d-4b24-9cdb-67a971012a3d",
+      "f6e0373b-902b-4ebf-b4df-4fb7f3c7b095",
+      "d83df074-0256-47d6-aaaf-757eb054426a",
+      "50ba568b-f5ce-45b6-89c6-f72e9e2688e1"
+    ]
+  }
+}

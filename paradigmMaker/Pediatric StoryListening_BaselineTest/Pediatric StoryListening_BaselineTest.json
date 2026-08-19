@@ -1,0 +1,1442 @@
+{
+  "creationDate": 1786344090169,
+  "isFavorite": false,
+  "isPersonal": true,
+  "variables": {
+    "OnBlockLength": 20000
+  },
+  "settings": {
+    "name": "Pediatric StoryListening_BaselineTest",
+    "timeToRepeat": 2000,
+    "volumes": 130,
+    "averageBlockLength": 20000,
+    "slices": 34
+  },
+  "languages": [
+    "English"
+  ],
+  "description": {
+    "English": "Paradigm name\n\nDescription:\nAlternating AI-generated and backwards Audio , 20 seconds each;\n1 OFF + 6 cycles (B AB AB AB AB AB AB);\n\nBased on recommendations from ASFNR (American Society for Functional Neuroradiology). \n\n---\nInstructions:\nPlease instruct patients appropriately and conduct patient training to ensure patients understand their responsibilities!\nPatients will hear the story read. Intermittently there will be blocks of backwards audio. Instruct the subject to listen attentively throughout the task to both types of audio.\n---\nClick 'Run' if you are ready to scan, or 'Preview' to view without the scanner.\nRemember to start the paradigm before you start the scan."
+  },
+  "versions": [
+    "VisualSystem",
+    "VisualSystem-HD",
+    "LCD-HD",
+    "LCD-4K"
+  ],
+  "position": [
+    {
+      "name": "MidPos",
+      "horizontal": "center",
+      "vertical": "center"
+    }
+  ],
+  "defaults": {
+    "backGroundColor": "Black",
+    "defaultTextPosition": "MidPos",
+    "defaultPicturePosition": "MidPos",
+    "foreGroundColor": "White",
+    "font": "Arial",
+    "language": "English",
+    "version": "LCD-HD",
+    "versions": {
+      "VisualSystem": {
+        "fontSize": 58
+      },
+      "VisualSystem-HD": {
+        "fontSize": 104
+      },
+      "LCD-HD": {
+        "fontSize": 104
+      },
+      "LCD-4K": {
+        "fontSize": 208
+      }
+    }
+  },
+  "BOLDSettings": {
+    "contrasts": {
+      "contrast": {
+        "attributes": {
+          "name": "Story Listening ON"
+        },
+        "value": 1
+      }
+    },
+    "process": {
+      "preProcOn": true,
+      "glmOn": true,
+      "sliceTime": {
+        "sliceTimeOn": false,
+        "interleavedOn": false,
+        "ascendingOn": true,
+        "oddOn": false
+      },
+      "motion": {
+        "motionOn": true
+      },
+      "gaussian": {
+        "smoothOn": true,
+        "gaussDim": "3D",
+        "x_dir": "",
+        "y_dir": "",
+        "z_dir": ""
+      },
+      "temporal": {
+        "temporalOn": true,
+        "cutOff": 180
+      }
+    }
+  },
+  "slide": {
+    "English-VisualSystem": [
+      {
+        "name": "Start",
+        "text": [
+          {
+            "value": "Passive story listening\n\nstarting soon",
+            "horizontal": "center",
+            "vertical": "center",
+            "fontSize": 66,
+            "fontFamily": "Arial",
+            "color": "White"
+          }
+        ],
+        "clear": false,
+        "creationDate": 1705416377274,
+        "backGroundColor": "Black",
+        "id": "8e9256a4-4d64-423c-a09f-5aca933f10d2"
+      },
+      {
+        "name": "Audio1",
+        "clear": false,
+        "creationDate": 1787128803997,
+        "backGroundColor": "Black",
+        "id": "b72a5072-1163-480a-8fb7-452b6e895590",
+        "picture": [
+          {
+            "value": "./pictures/Cross.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 40.00000000000003,
+            "width": 39.99999999999998
+          }
+        ],
+        "sound": {
+          "value": "./audio/BaselineTest-1.wav"
+        }
+      },
+      {
+        "name": "ReverseAudio1",
+        "clear": false,
+        "creationDate": 1787128803997,
+        "backGroundColor": "Black",
+        "id": "c4013141-76e3-4597-aa05-2eaa5db2c01f",
+        "picture": [
+          {
+            "value": "./pictures/Cross.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 40.00000000000003,
+            "width": 39.99999999999998
+          }
+        ],
+        "sound": {
+          "value": "./audio/BaselineTest-1_backwards.wav"
+        }
+      },
+      {
+        "name": "Audio2",
+        "clear": false,
+        "creationDate": 1787128803997,
+        "backGroundColor": "Black",
+        "id": "7a122dfa-3bb7-4cdb-a1cc-e1cb2ddca6a9",
+        "picture": [
+          {
+            "value": "./pictures/Cross.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 40.00000000000003,
+            "width": 39.99999999999998
+          }
+        ],
+        "sound": {
+          "value": "./audio/BaselineTest-2.wav"
+        }
+      },
+      {
+        "name": "ReverseAudio2",
+        "clear": false,
+        "creationDate": 1787128803997,
+        "backGroundColor": "Black",
+        "id": "6a6a5b34-44eb-48ce-af62-5ff3038fe549",
+        "picture": [
+          {
+            "value": "./pictures/Cross.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 40.00000000000003,
+            "width": 39.99999999999998
+          }
+        ],
+        "sound": {
+          "value": "./audio/BaselineTest-2_backwards.wav"
+        }
+      },
+      {
+        "name": "Audio3",
+        "clear": false,
+        "creationDate": 1787128803997,
+        "backGroundColor": "Black",
+        "id": "888c99ee-d495-4f6d-92a4-882d2fece6ff",
+        "picture": [
+          {
+            "value": "./pictures/Cross.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 40.00000000000003,
+            "width": 39.99999999999998
+          }
+        ],
+        "sound": {
+          "value": "./audio/BaselineTest-3.wav"
+        }
+      },
+      {
+        "name": "ReverseAudio3",
+        "clear": false,
+        "creationDate": 1787128803997,
+        "backGroundColor": "Black",
+        "id": "ec54c6bb-d82c-4c68-9d54-e365d2716c88",
+        "picture": [
+          {
+            "value": "./pictures/Cross.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 40.00000000000003,
+            "width": 39.99999999999998
+          }
+        ],
+        "sound": {
+          "value": "./audio/BaselineTest-3_backwards.wav"
+        }
+      },
+      {
+        "name": "Audio4",
+        "clear": false,
+        "creationDate": 1787128803997,
+        "backGroundColor": "Black",
+        "id": "5d685b7b-82b4-43ce-9df7-0c2232535a96",
+        "picture": [
+          {
+            "value": "./pictures/Cross.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 40.00000000000003,
+            "width": 39.99999999999998
+          }
+        ],
+        "sound": {
+          "value": "./audio/BaselineTest-4.wav"
+        }
+      },
+      {
+        "name": "ReverseAudio4",
+        "clear": false,
+        "creationDate": 1787128803997,
+        "backGroundColor": "Black",
+        "id": "bcdd01b3-2fb9-4f5b-a40a-dba22ab11191",
+        "picture": [
+          {
+            "value": "./pictures/Cross.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 40.00000000000003,
+            "width": 39.99999999999998
+          }
+        ],
+        "sound": {
+          "value": "./audio/BaselineTest-4_backwards.wav"
+        }
+      },
+      {
+        "name": "Audio5",
+        "clear": false,
+        "creationDate": 1787128803997,
+        "backGroundColor": "Black",
+        "id": "8ebb5712-d412-4cbc-9cc8-695b8f92181f",
+        "picture": [
+          {
+            "value": "./pictures/Cross.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 40.00000000000003,
+            "width": 39.99999999999998
+          }
+        ],
+        "sound": {
+          "value": "./audio/BaselineTest-5.wav"
+        }
+      },
+      {
+        "name": "ReverseAudio5",
+        "clear": false,
+        "creationDate": 1787128803997,
+        "backGroundColor": "Black",
+        "id": "908648c4-c396-473b-a3a4-32184ca8fb98",
+        "picture": [
+          {
+            "value": "./pictures/Cross.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 40.00000000000003,
+            "width": 39.99999999999998
+          }
+        ],
+        "sound": {
+          "value": "./audio/BaselineTest-5_backwards.wav"
+        }
+      },
+      {
+        "name": "Audio6",
+        "clear": false,
+        "creationDate": 1787128803997,
+        "backGroundColor": "Black",
+        "id": "628ff03e-224c-4436-ae0f-ff7ec08283f6",
+        "picture": [
+          {
+            "value": "./pictures/Cross.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 40.00000000000003,
+            "width": 39.99999999999998
+          }
+        ],
+        "sound": {
+          "value": "./audio/BaselineTest-6.wav"
+        }
+      },
+      {
+        "name": "ReverseAudio6",
+        "clear": false,
+        "creationDate": 1787128803997,
+        "backGroundColor": "Black",
+        "id": "e7d71239-5e4d-47d0-99b7-31b6eda429b8",
+        "picture": [
+          {
+            "value": "./pictures/Cross.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 40.00000000000003,
+            "width": 39.99999999999998
+          }
+        ],
+        "sound": {
+          "value": "./audio/BaselineTest-6_backwards.wav"
+        }
+      }
+    ],
+    "English-VisualSystem-HD": [
+      {
+        "name": "Start",
+        "text": [
+          {
+            "value": "Passive story listening\n\nstarting soon",
+            "horizontal": "center",
+            "vertical": "center",
+            "fontSize": 104,
+            "fontFamily": "Arial",
+            "color": "White"
+          }
+        ],
+        "clear": false,
+        "creationDate": 1705416388900,
+        "backGroundColor": "Black",
+        "id": "aeceab55-488f-486e-88ed-09fa1541e406"
+      },
+      {
+        "name": "Audio1",
+        "clear": false,
+        "creationDate": 1787128803997,
+        "backGroundColor": "Black",
+        "id": "0625cb52-4f0e-4f12-9527-a17e4cf0f81b",
+        "picture": [
+          {
+            "value": "./pictures/Cross_lcd.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 73.00000000000003,
+            "width": 74.00000000000001
+          }
+        ],
+        "sound": {
+          "value": "./audio/BaselineTest-1.wav"
+        }
+      },
+      {
+        "name": "ReverseAudio1",
+        "clear": false,
+        "creationDate": 1787128803997,
+        "backGroundColor": "Black",
+        "id": "8272987c-48b1-4be5-87b3-1e8a41e2a9e2",
+        "picture": [
+          {
+            "value": "./pictures/Cross_lcd.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 73.00000000000003,
+            "width": 74.00000000000001
+          }
+        ],
+        "sound": {
+          "value": "./audio/BaselineTest-1_backwards.wav"
+        }
+      },
+      {
+        "name": "Audio2",
+        "clear": false,
+        "creationDate": 1787128803997,
+        "backGroundColor": "Black",
+        "id": "bd1db904-a9e9-471b-a773-c5f30a2dacd4",
+        "picture": [
+          {
+            "value": "./pictures/Cross_lcd.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 73.00000000000003,
+            "width": 74.00000000000001
+          }
+        ],
+        "sound": {
+          "value": "./audio/BaselineTest-2.wav"
+        }
+      },
+      {
+        "name": "ReverseAudio2",
+        "clear": false,
+        "creationDate": 1787128803997,
+        "backGroundColor": "Black",
+        "id": "943caf93-0b7b-4a73-a74e-95530c451088",
+        "picture": [
+          {
+            "value": "./pictures/Cross_lcd.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 73.00000000000003,
+            "width": 74.00000000000001
+          }
+        ],
+        "sound": {
+          "value": "./audio/BaselineTest-2_backwards.wav"
+        }
+      },
+      {
+        "name": "Audio3",
+        "clear": false,
+        "creationDate": 1787128803997,
+        "backGroundColor": "Black",
+        "id": "902683e1-70cf-48ed-8b07-ed5f4d7d983c",
+        "picture": [
+          {
+            "value": "./pictures/Cross_lcd.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 73.00000000000003,
+            "width": 74.00000000000001
+          }
+        ],
+        "sound": {
+          "value": "./audio/BaselineTest-3.wav"
+        }
+      },
+      {
+        "name": "ReverseAudio3",
+        "clear": false,
+        "creationDate": 1787128803997,
+        "backGroundColor": "Black",
+        "id": "e8963251-4153-4b27-8825-6ccfa24b6859",
+        "picture": [
+          {
+            "value": "./pictures/Cross_lcd.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 73.00000000000003,
+            "width": 74.00000000000001
+          }
+        ],
+        "sound": {
+          "value": "./audio/BaselineTest-3_backwards.wav"
+        }
+      },
+      {
+        "name": "Audio4",
+        "clear": false,
+        "creationDate": 1787128803997,
+        "backGroundColor": "Black",
+        "id": "10cb2d34-c129-42a2-9240-c0268ea41bc1",
+        "picture": [
+          {
+            "value": "./pictures/Cross_lcd.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 73.00000000000003,
+            "width": 74.00000000000001
+          }
+        ],
+        "sound": {
+          "value": "./audio/BaselineTest-4.wav"
+        }
+      },
+      {
+        "name": "ReverseAudio4",
+        "clear": false,
+        "creationDate": 1787128803997,
+        "backGroundColor": "Black",
+        "id": "8fcf074e-91da-4f67-bb64-c4eea4835f57",
+        "picture": [
+          {
+            "value": "./pictures/Cross_lcd.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 73.00000000000003,
+            "width": 74.00000000000001
+          }
+        ],
+        "sound": {
+          "value": "./audio/BaselineTest-4_backwards.wav"
+        }
+      },
+      {
+        "name": "Audio5",
+        "clear": false,
+        "creationDate": 1787128803997,
+        "backGroundColor": "Black",
+        "id": "538dc4f9-b434-427b-bb76-77ed66cfdc7f",
+        "picture": [
+          {
+            "value": "./pictures/Cross_lcd.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 73.00000000000003,
+            "width": 74.00000000000001
+          }
+        ],
+        "sound": {
+          "value": "./audio/BaselineTest-5.wav"
+        }
+      },
+      {
+        "name": "ReverseAudio5",
+        "clear": false,
+        "creationDate": 1787128803997,
+        "backGroundColor": "Black",
+        "id": "f3ce83ff-5c86-4481-b1fc-9906dfded3bc",
+        "picture": [
+          {
+            "value": "./pictures/Cross_lcd.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 73.00000000000003,
+            "width": 74.00000000000001
+          }
+        ],
+        "sound": {
+          "value": "./audio/BaselineTest-5_backwards.wav"
+        }
+      },
+      {
+        "name": "Audio6",
+        "clear": false,
+        "creationDate": 1787128803998,
+        "backGroundColor": "Black",
+        "id": "a0bfaa04-28a9-4b4b-9757-acae75fb7a13",
+        "picture": [
+          {
+            "value": "./pictures/Cross_lcd.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 73.00000000000003,
+            "width": 74.00000000000001
+          }
+        ],
+        "sound": {
+          "value": "./audio/BaselineTest-6.wav"
+        }
+      },
+      {
+        "name": "ReverseAudio6",
+        "clear": false,
+        "creationDate": 1787128803998,
+        "backGroundColor": "Black",
+        "id": "a0498eca-ecf3-4b6c-9770-13900e250f01",
+        "picture": [
+          {
+            "value": "./pictures/Cross_lcd.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 73.00000000000003,
+            "width": 74.00000000000001
+          }
+        ],
+        "sound": {
+          "value": "./audio/BaselineTest-6_backwards.wav"
+        }
+      }
+    ],
+    "English-LCD-HD": [
+      {
+        "name": "Start",
+        "text": [
+          {
+            "value": "Passive story listening\n\nstarting soon",
+            "horizontal": "center",
+            "vertical": "center",
+            "fontSize": 104,
+            "fontFamily": "Arial",
+            "color": "White"
+          }
+        ],
+        "clear": false,
+        "creationDate": 1705416395588,
+        "backGroundColor": "Black",
+        "id": "806100d6-bd75-4a3a-afbf-718ee09e4e8b"
+      },
+      {
+        "name": "Audio1",
+        "clear": false,
+        "creationDate": 1787128803998,
+        "backGroundColor": "Black",
+        "id": "223d994e-a995-4eec-a205-a9f0657ec270",
+        "modificationDate": 1786361459208,
+        "picture": [
+          {
+            "value": "/pictures/Cross_lcd.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 72.00000000000001,
+            "width": 72.00000000000001
+          }
+        ],
+        "sound": {
+          "value": "./audio/BaselineTest-1.wav"
+        }
+      },
+      {
+        "name": "ReverseAudio1",
+        "clear": false,
+        "creationDate": 1787128803998,
+        "backGroundColor": "Black",
+        "id": "69b520b7-48dc-42b6-9b6f-ca91a5fc6eb4",
+        "modificationDate": 1786361459208,
+        "picture": [
+          {
+            "value": "/pictures/Cross_lcd.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 72.00000000000001,
+            "width": 72.00000000000001
+          }
+        ],
+        "sound": {
+          "value": "./audio/BaselineTest-1_backwards.wav"
+        }
+      },
+      {
+        "name": "Audio2",
+        "clear": false,
+        "creationDate": 1787128803998,
+        "backGroundColor": "Black",
+        "id": "6a09bc84-5fa2-4c2d-8dc7-8f3ecb4fea03",
+        "modificationDate": 1786361459208,
+        "picture": [
+          {
+            "value": "/pictures/Cross_lcd.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 72.00000000000001,
+            "width": 72.00000000000001
+          }
+        ],
+        "sound": {
+          "value": "./audio/BaselineTest-2.wav"
+        }
+      },
+      {
+        "name": "ReverseAudio2",
+        "clear": false,
+        "creationDate": 1787128803998,
+        "backGroundColor": "Black",
+        "id": "c0cc0a72-a750-4e62-9e56-2ad99ff8adca",
+        "modificationDate": 1786361459208,
+        "picture": [
+          {
+            "value": "/pictures/Cross_lcd.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 72.00000000000001,
+            "width": 72.00000000000001
+          }
+        ],
+        "sound": {
+          "value": "./audio/BaselineTest-2_backwards.wav"
+        }
+      },
+      {
+        "name": "Audio3",
+        "clear": false,
+        "creationDate": 1787128803998,
+        "backGroundColor": "Black",
+        "id": "865d16b6-8221-4c10-a2b0-31d4f7ab58da",
+        "modificationDate": 1786361459208,
+        "picture": [
+          {
+            "value": "/pictures/Cross_lcd.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 72.00000000000001,
+            "width": 72.00000000000001
+          }
+        ],
+        "sound": {
+          "value": "./audio/BaselineTest-3.wav"
+        }
+      },
+      {
+        "name": "ReverseAudio3",
+        "clear": false,
+        "creationDate": 1787128803998,
+        "backGroundColor": "Black",
+        "id": "50d63480-951e-4346-812f-9d3ad18099a5",
+        "modificationDate": 1786361459208,
+        "picture": [
+          {
+            "value": "/pictures/Cross_lcd.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 72.00000000000001,
+            "width": 72.00000000000001
+          }
+        ],
+        "sound": {
+          "value": "./audio/BaselineTest-3_backwards.wav"
+        }
+      },
+      {
+        "name": "Audio4",
+        "clear": false,
+        "creationDate": 1787128803998,
+        "backGroundColor": "Black",
+        "id": "37b96cec-7081-409a-bd9f-38b4ff41cd66",
+        "modificationDate": 1786361459208,
+        "picture": [
+          {
+            "value": "/pictures/Cross_lcd.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 72.00000000000001,
+            "width": 72.00000000000001
+          }
+        ],
+        "sound": {
+          "value": "./audio/BaselineTest-4.wav"
+        }
+      },
+      {
+        "name": "ReverseAudio4",
+        "clear": false,
+        "creationDate": 1787128803998,
+        "backGroundColor": "Black",
+        "id": "a5010eb2-e462-4fcb-b97f-f0baf586f931",
+        "modificationDate": 1786361459208,
+        "picture": [
+          {
+            "value": "/pictures/Cross_lcd.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 72.00000000000001,
+            "width": 72.00000000000001
+          }
+        ],
+        "sound": {
+          "value": "./audio/BaselineTest-4_backwards.wav"
+        }
+      },
+      {
+        "name": "Audio5",
+        "clear": false,
+        "creationDate": 1787128803998,
+        "backGroundColor": "Black",
+        "id": "aad72af2-7ffa-487c-9e7c-319a0075fbf1",
+        "modificationDate": 1786361459208,
+        "picture": [
+          {
+            "value": "/pictures/Cross_lcd.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 72.00000000000001,
+            "width": 72.00000000000001
+          }
+        ],
+        "sound": {
+          "value": "./audio/BaselineTest-5.wav"
+        }
+      },
+      {
+        "name": "ReverseAudio5",
+        "clear": false,
+        "creationDate": 1787128803998,
+        "backGroundColor": "Black",
+        "id": "a3fb21e1-d27c-445f-8789-d2de73fbe8c5",
+        "modificationDate": 1786361459208,
+        "picture": [
+          {
+            "value": "/pictures/Cross_lcd.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 72.00000000000001,
+            "width": 72.00000000000001
+          }
+        ],
+        "sound": {
+          "value": "./audio/BaselineTest-5_backwards.wav"
+        }
+      },
+      {
+        "name": "Audio6",
+        "clear": false,
+        "creationDate": 1787128803998,
+        "backGroundColor": "Black",
+        "id": "a3061f3f-7695-47c2-8376-9ccafa3c0173",
+        "modificationDate": 1786361459208,
+        "picture": [
+          {
+            "value": "/pictures/Cross_lcd.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 72.00000000000001,
+            "width": 72.00000000000001
+          }
+        ],
+        "sound": {
+          "value": "./audio/BaselineTest-6.wav"
+        }
+      },
+      {
+        "name": "ReverseAudio6",
+        "clear": false,
+        "creationDate": 1787128803998,
+        "backGroundColor": "Black",
+        "id": "8ac79fb4-2402-4a6f-aeff-2a6572dca7f6",
+        "modificationDate": 1786361459208,
+        "picture": [
+          {
+            "value": "/pictures/Cross_lcd.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 72.00000000000001,
+            "width": 72.00000000000001
+          }
+        ],
+        "sound": {
+          "value": "./audio/BaselineTest-6_backwards.wav"
+        }
+      }
+    ],
+    "English-LCD-4K": [
+      {
+        "name": "Start",
+        "text": [
+          {
+            "value": "Passive story listening\n\nstarting soon",
+            "horizontal": "center",
+            "vertical": "center",
+            "fontSize": 208,
+            "fontFamily": "Arial",
+            "color": "White"
+          }
+        ],
+        "clear": false,
+        "creationDate": 1705438228291,
+        "backGroundColor": "Black",
+        "id": "04abcacb-6242-4091-a72c-e6cc1200e167"
+      },
+      {
+        "name": "Audio1",
+        "clear": false,
+        "creationDate": 1787128803998,
+        "backGroundColor": "Black",
+        "id": "6cf9ed1e-77d6-412f-b803-6ca95ff2394c",
+        "picture": [
+          {
+            "value": "./pictures/Cross_lcd.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 121.63139914744079,
+            "width": 123.29758269740604
+          }
+        ],
+        "sound": {
+          "value": "./audio/BaselineTest-1.wav"
+        }
+      },
+      {
+        "name": "ReverseAudio1",
+        "clear": false,
+        "creationDate": 1787128803998,
+        "backGroundColor": "Black",
+        "id": "02199154-5ab4-43c1-b1e2-84a83e8926a6",
+        "picture": [
+          {
+            "value": "./pictures/Cross_lcd.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 121.63139914744079,
+            "width": 123.29758269740604
+          }
+        ],
+        "sound": {
+          "value": "./audio/BaselineTest-1_backwards.wav"
+        }
+      },
+      {
+        "name": "Audio2",
+        "clear": false,
+        "creationDate": 1787128803998,
+        "backGroundColor": "Black",
+        "id": "0867517a-cd95-4536-9531-94fbdaf16d1b",
+        "picture": [
+          {
+            "value": "./pictures/Cross_lcd.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 121.63139914744079,
+            "width": 123.29758269740604
+          }
+        ],
+        "sound": {
+          "value": "./audio/BaselineTest-2.wav"
+        }
+      },
+      {
+        "name": "ReverseAudio2",
+        "clear": false,
+        "creationDate": 1787128803998,
+        "backGroundColor": "Black",
+        "id": "462c3839-4ce2-4308-b860-8040bb7a8367",
+        "picture": [
+          {
+            "value": "./pictures/Cross_lcd.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 121.63139914744079,
+            "width": 123.29758269740604
+          }
+        ],
+        "sound": {
+          "value": "./audio/BaselineTest-2_backwards.wav"
+        }
+      },
+      {
+        "name": "Audio3",
+        "clear": false,
+        "creationDate": 1787128803998,
+        "backGroundColor": "Black",
+        "id": "fe6656f8-2347-4c0b-95de-9968c5ff74b6",
+        "picture": [
+          {
+            "value": "./pictures/Cross_lcd.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 121.63139914744079,
+            "width": 123.29758269740604
+          }
+        ],
+        "sound": {
+          "value": "./audio/BaselineTest-3.wav"
+        }
+      },
+      {
+        "name": "ReverseAudio3",
+        "clear": false,
+        "creationDate": 1787128803998,
+        "backGroundColor": "Black",
+        "id": "92c50e2c-f0bf-428b-865c-b224e2c8b699",
+        "picture": [
+          {
+            "value": "./pictures/Cross_lcd.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 121.63139914744079,
+            "width": 123.29758269740604
+          }
+        ],
+        "sound": {
+          "value": "./audio/BaselineTest-3_backwards.wav"
+        }
+      },
+      {
+        "name": "Audio4",
+        "clear": false,
+        "creationDate": 1787128803998,
+        "backGroundColor": "Black",
+        "id": "32c578a1-caa7-4f74-9d23-255a46e3b698",
+        "picture": [
+          {
+            "value": "./pictures/Cross_lcd.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 121.63139914744079,
+            "width": 123.29758269740604
+          }
+        ],
+        "sound": {
+          "value": "./audio/BaselineTest-4.wav"
+        }
+      },
+      {
+        "name": "ReverseAudio4",
+        "clear": false,
+        "creationDate": 1787128803998,
+        "backGroundColor": "Black",
+        "id": "896583fb-ded5-4f58-bc17-fc385d580c29",
+        "picture": [
+          {
+            "value": "./pictures/Cross_lcd.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 121.63139914744079,
+            "width": 123.29758269740604
+          }
+        ],
+        "sound": {
+          "value": "./audio/BaselineTest-4_backwards.wav"
+        }
+      },
+      {
+        "name": "Audio5",
+        "clear": false,
+        "creationDate": 1787128803998,
+        "backGroundColor": "Black",
+        "id": "f0d01391-5c47-4f1a-bed4-462a2dcf3ec6",
+        "picture": [
+          {
+            "value": "./pictures/Cross_lcd.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 121.63139914744079,
+            "width": 123.29758269740604
+          }
+        ],
+        "sound": {
+          "value": "./audio/BaselineTest-5.wav"
+        }
+      },
+      {
+        "name": "ReverseAudio5",
+        "clear": false,
+        "creationDate": 1787128803998,
+        "backGroundColor": "Black",
+        "id": "7204e104-7f25-4827-9f2c-9bdae0132898",
+        "picture": [
+          {
+            "value": "./pictures/Cross_lcd.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 121.63139914744079,
+            "width": 123.29758269740604
+          }
+        ],
+        "sound": {
+          "value": "./audio/BaselineTest-5_backwards.wav"
+        }
+      },
+      {
+        "name": "Audio6",
+        "clear": false,
+        "creationDate": 1787128803998,
+        "backGroundColor": "Black",
+        "id": "a4688947-c125-4a7b-b55e-40784ee38844",
+        "picture": [
+          {
+            "value": "./pictures/Cross_lcd.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 121.63139914744079,
+            "width": 123.29758269740604
+          }
+        ],
+        "sound": {
+          "value": "./audio/BaselineTest-6.wav"
+        }
+      },
+      {
+        "name": "ReverseAudio6",
+        "clear": false,
+        "creationDate": 1787128803998,
+        "backGroundColor": "Black",
+        "id": "b8a21ed2-3855-496c-b5a5-c2d2e7e09955",
+        "picture": [
+          {
+            "value": "./pictures/Cross_lcd.bmp",
+            "horizontal": "center",
+            "vertical": "center",
+            "height": 121.63139914744079,
+            "width": 123.29758269740604
+          }
+        ],
+        "sound": {
+          "value": "./audio/BaselineTest-6_backwards.wav"
+        }
+      }
+    ]
+  },
+  "trial": [
+    {
+      "name": "Start",
+      "show": [
+        {
+          "item": "Start",
+          "overlap": true
+        }
+      ],
+      "register": {
+        "key": [
+          "s"
+        ]
+      },
+      "id": "befa5cea-83b5-42a6-8f8d-3f19f5c03a61"
+    },
+    {
+      "name": "Reverse1",
+      "show": [
+        {
+          "item": "ReverseAudio1",
+          "duration": "$OnBlockLength"
+        }
+      ],
+      "condition": 0,
+      "register": {
+        "key": []
+      },
+      "id": "d6ffed55-82ee-474d-a030-f8fe8e252734"
+    },
+    {
+      "name": "Audio1",
+      "show": [
+        {
+          "item": "Audio1",
+          "duration": "$OnBlockLength"
+        }
+      ],
+      "condition": 0,
+      "register": {
+        "key": []
+      },
+      "id": "30d689d7-b83b-4193-9857-9d6aec7ec938"
+    },
+    {
+      "name": "Reverse2",
+      "show": [
+        {
+          "item": "ReverseAudio2",
+          "duration": "$OnBlockLength"
+        }
+      ],
+      "condition": 0,
+      "register": {
+        "key": []
+      },
+      "id": "dc013bc2-5cbe-4d13-9792-3c11f10f91b8"
+    },
+    {
+      "name": "Audio2",
+      "show": [
+        {
+          "item": "Audio2",
+          "duration": "$OnBlockLength"
+        }
+      ],
+      "condition": 0,
+      "register": {
+        "key": []
+      },
+      "id": "73aa1b68-aee2-4f21-85e2-da277e43247f"
+    },
+    {
+      "name": "Reverse3",
+      "show": [
+        {
+          "item": "ReverseAudio3",
+          "duration": "$OnBlockLength"
+        }
+      ],
+      "condition": 0,
+      "register": {
+        "key": []
+      },
+      "id": "f32734d2-b235-416d-80cf-ab1f46558228"
+    },
+    {
+      "name": "Audio3",
+      "show": [
+        {
+          "item": "Audio3",
+          "duration": "$OnBlockLength"
+        }
+      ],
+      "condition": 0,
+      "register": {
+        "key": []
+      },
+      "id": "7a6a7f20-4409-476f-b557-ba5fb6096bef"
+    },
+    {
+      "name": "Reverse4",
+      "show": [
+        {
+          "item": "ReverseAudio4",
+          "duration": "$OnBlockLength"
+        }
+      ],
+      "condition": 0,
+      "register": {
+        "key": []
+      },
+      "id": "241562db-b85b-4e79-bb0b-e3fe12e508e0"
+    },
+    {
+      "name": "Audio4",
+      "show": [
+        {
+          "item": "Audio4",
+          "duration": "$OnBlockLength"
+        }
+      ],
+      "condition": 0,
+      "register": {
+        "key": []
+      },
+      "id": "1b362a66-bd3f-4dbf-9322-5d91289a6d4c"
+    },
+    {
+      "name": "Reverse5",
+      "show": [
+        {
+          "item": "ReverseAudio5",
+          "duration": "$OnBlockLength"
+        }
+      ],
+      "condition": 0,
+      "register": {
+        "key": []
+      },
+      "id": "52efc654-abf9-4cba-9b9d-0afff4dd9a97"
+    },
+    {
+      "name": "Audio5",
+      "show": [
+        {
+          "item": "Audio5",
+          "duration": "$OnBlockLength"
+        }
+      ],
+      "condition": 0,
+      "register": {
+        "key": []
+      },
+      "id": "8d01f331-d1f8-49db-b3ef-78f5146cad53"
+    },
+    {
+      "name": "Reverse6",
+      "show": [
+        {
+          "item": "ReverseAudio6",
+          "duration": "$OnBlockLength"
+        }
+      ],
+      "condition": 0,
+      "register": {
+        "key": []
+      },
+      "id": "6ccb6378-e483-4068-bb83-d0e5cf082855"
+    },
+    {
+      "name": "Audio6",
+      "show": [
+        {
+          "item": "Audio6",
+          "duration": "$OnBlockLength"
+        }
+      ],
+      "condition": 0,
+      "register": {
+        "key": []
+      },
+      "id": "39d74e2b-212a-4520-8fd5-3a45dd9d319a"
+    },
+    {
+      "name": "Reverse7",
+      "show": [
+        {
+          "item": "ReverseAudio1",
+          "duration": "$OnBlockLength"
+        }
+      ],
+      "condition": 0,
+      "register": {
+        "key": []
+      },
+      "id": "b0574665-7272-4439-b756-a46cb617c67a"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Reverse1",
+      "condition": 0,
+      "order": 0,
+      "repetitions": 0,
+      "trials": [
+        "d6ffed55-82ee-474d-a030-f8fe8e252734"
+      ],
+      "id": "74f2b734-55d4-45e7-b6be-b9512af394a8"
+    },
+    {
+      "name": "Story1",
+      "condition": 1,
+      "order": 0,
+      "repetitions": 0,
+      "trials": [
+        "30d689d7-b83b-4193-9857-9d6aec7ec938"
+      ],
+      "id": "2b912ac6-1971-4ed0-b9a0-54f40fd6de25"
+    },
+    {
+      "name": "Reverse2",
+      "condition": 0,
+      "order": 0,
+      "repetitions": 0,
+      "trials": [
+        "dc013bc2-5cbe-4d13-9792-3c11f10f91b8"
+      ],
+      "id": "ecaa9097-3c1a-47b3-b7a9-65c19b05981a"
+    },
+    {
+      "name": "Story2",
+      "condition": 1,
+      "order": 0,
+      "repetitions": 0,
+      "trials": [
+        "73aa1b68-aee2-4f21-85e2-da277e43247f"
+      ],
+      "id": "9db503cd-e398-46f0-8138-00e9714f5430"
+    },
+    {
+      "name": "Reverse3",
+      "condition": 0,
+      "order": 0,
+      "repetitions": 0,
+      "trials": [
+        "f32734d2-b235-416d-80cf-ab1f46558228"
+      ],
+      "id": "558d3346-874b-4d4c-aa3a-31c4f61dfc06"
+    },
+    {
+      "name": "Story3",
+      "condition": 1,
+      "order": 0,
+      "repetitions": 0,
+      "trials": [
+        "7a6a7f20-4409-476f-b557-ba5fb6096bef"
+      ],
+      "id": "ec7ff6ce-cc8e-4271-b9da-64e3daa99e29"
+    },
+    {
+      "name": "Reverse4",
+      "condition": 0,
+      "order": 0,
+      "repetitions": 0,
+      "trials": [
+        "241562db-b85b-4e79-bb0b-e3fe12e508e0"
+      ],
+      "id": "b8553135-6672-4728-988f-2d2c4faaae75"
+    },
+    {
+      "name": "Story4",
+      "condition": 1,
+      "order": 0,
+      "repetitions": 0,
+      "trials": [
+        "1b362a66-bd3f-4dbf-9322-5d91289a6d4c"
+      ],
+      "id": "2627586e-ec22-421b-a304-54c28dab464d"
+    },
+    {
+      "name": "Reverse5",
+      "condition": 0,
+      "order": 0,
+      "repetitions": 0,
+      "trials": [
+        "52efc654-abf9-4cba-9b9d-0afff4dd9a97"
+      ],
+      "id": "d529f0e6-e3a8-451b-a49c-c108c6c8db11"
+    },
+    {
+      "name": "Story5",
+      "condition": 1,
+      "order": 0,
+      "repetitions": 0,
+      "trials": [
+        "8d01f331-d1f8-49db-b3ef-78f5146cad53"
+      ],
+      "id": "1deb7d5d-687f-40df-a88d-ac2270a52f77"
+    },
+    {
+      "name": "Reverse6",
+      "condition": 0,
+      "order": 0,
+      "repetitions": 0,
+      "trials": [
+        "6ccb6378-e483-4068-bb83-d0e5cf082855"
+      ],
+      "id": "9832fae5-27d9-4f72-9d3d-1f1c096029bc"
+    },
+    {
+      "name": "Story6",
+      "condition": 1,
+      "order": 0,
+      "repetitions": 0,
+      "trials": [
+        "39d74e2b-212a-4520-8fd5-3a45dd9d319a"
+      ],
+      "id": "6dbfb759-405c-427a-99d7-544ef2fafc96"
+    },
+    {
+      "name": "Reverse7",
+      "condition": 0,
+      "order": 0,
+      "repetitions": 0,
+      "trials": [
+        "b0574665-7272-4439-b756-a46cb617c67a"
+      ],
+      "id": "f0858090-5195-400c-be53-ee6e8c5621f6"
+    }
+  ],
+  "session": {
+    "run": [
+      "befa5cea-83b5-42a6-8f8d-3f19f5c03a61",
+      "74f2b734-55d4-45e7-b6be-b9512af394a8",
+      "2b912ac6-1971-4ed0-b9a0-54f40fd6de25",
+      "ecaa9097-3c1a-47b3-b7a9-65c19b05981a",
+      "9db503cd-e398-46f0-8138-00e9714f5430",
+      "558d3346-874b-4d4c-aa3a-31c4f61dfc06",
+      "ec7ff6ce-cc8e-4271-b9da-64e3daa99e29",
+      "b8553135-6672-4728-988f-2d2c4faaae75",
+      "2627586e-ec22-421b-a304-54c28dab464d",
+      "d529f0e6-e3a8-451b-a49c-c108c6c8db11",
+      "1deb7d5d-687f-40df-a88d-ac2270a52f77",
+      "9832fae5-27d9-4f72-9d3d-1f1c096029bc",
+      "6dbfb759-405c-427a-99d7-544ef2fafc96",
+      "f0858090-5195-400c-be53-ee6e8c5621f6"
+    ]
+  }
+}
