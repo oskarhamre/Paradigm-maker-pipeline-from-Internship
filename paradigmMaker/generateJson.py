@@ -5,25 +5,28 @@ import uuid
 import time
 import warnings
 
-def _set_block_length(content, blockLength):
+def _set_block_length(content: dict, blockLength: int) -> None:
     content["variables"]["OnBlockLength"] = blockLength
     content["settings"]["averageBlockLength"] = blockLength
 
-
-def _set_language_and_description(content, language:str):
+def _set_language_and_description(content: dict, language:str) -> None:
     content["languages"] = [language]
-    content["description"][language] = copy.deepcopy(content["description"].pop("English"))
+    content["settings"]["description"][language] = copy.deepcopy(
+        content["settings"]["description"].pop("English")
+        )
 
     if language != "English":
         print(f"\nNote: Description for {language} is in English. It should be translated.\n")
         content["defaults"]["language"] = language
 
-
-def _timestamp():
+def _timestamp() -> int:
     return int(time.time()*1000)
 
-
-def _make_slide(protocol_slide, i, name):
+def _make_slide(
+        protocol_slide: dict,
+        i: int,
+        name: str
+    ) -> tuple[dict,dict]:
     slide = copy.deepcopy(protocol_slide)
     reverse_slide = copy.deepcopy(protocol_slide)
 
@@ -41,8 +44,12 @@ def _make_slide(protocol_slide, i, name):
 
     return slide, reverse_slide
 
-
-def _insert_slides(content, nBlocks, name, language):
+def _insert_slides(
+        content: dict,
+        nBlocks: int,
+        name: str,
+        language: str
+    ) -> None:
     for version in content["versions"]:
         version_slides = content["slide"][version]
 
@@ -59,7 +66,7 @@ def _insert_slides(content, nBlocks, name, language):
         content["slide"][f"{language}-{version}"] = new_slides
         del content["slide"][version]
 
-def _insert_trials(content, nBlocks):
+def _insert_trials(content: dict, nBlocks: int) -> dict[str,str]:
     trial = content["trial"]
     protocol_trial = trial[1]
 
@@ -104,7 +111,11 @@ def _insert_trials(content, nBlocks):
 
     return trial_ids
 
-def _insert_blocks(content, nBlocks, trial_ids):
+def _insert_blocks(
+        content: dict,
+        nBlocks: int,
+        trial_ids: dict[str,str]
+    ) -> dict[str,str]:
     protocol_block = content["blocks"][0]
 
     # a1 = active 1, r1 = reverse 1, ...
@@ -147,7 +158,12 @@ def _insert_blocks(content, nBlocks, trial_ids):
 
     return block_ids
 
-def _insert_sessions(content, nBlocks, trial_ids: dict, block_ids: dict):
+def _insert_sessions(
+        content: dict,
+        nBlocks: int,
+        trial_ids: dict[str,str],
+        block_ids: dict[str,str]
+    ) -> None:
     new_session = []
 
     start = trial_ids["s"]
@@ -160,14 +176,29 @@ def _insert_sessions(content, nBlocks, trial_ids: dict, block_ids: dict):
     new_session.append(block_ids[f"r{nBlocks+1}"])
 
     content["session"]["run"] = new_session
-
-        
+   
 def generate_json(
         language: str,
-        storyName,
+        storyName: str,
         nBlocks: int = 6,
         blockLength: int = 20_000
-):
+) -> None:
+    """
+    Generates the nordicAktiva-compatible JSON-file containing
+    the generated audiofiles.
+    The JSON-file is stored in the paradigm folder together with the audiofiles
+
+    Parameters
+    ---
+    language: str
+        language in which the story is generated
+    storyName: str
+        name of the story, used as the name of the paradigm as well
+    nBlocks: int, default=6
+        number of blocks in the paradigm
+    blockLenth: int, default=20_000
+        length of each individual block in milliseconds
+    """
     if " " in storyName:
         warnings.warn(
             "Story name cannot contain space. Whitespace is being removed.",

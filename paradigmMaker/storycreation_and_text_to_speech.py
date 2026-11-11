@@ -84,7 +84,23 @@ def _generate_story(client, story_theme: str, target_lang: str):
 
     return response.content[0].text
 
-def generate_story_and_sound(target_lang: str, story_name: str, story_theme: str = ""):
+def generate_story_and_sound(target_lang: str, story_name: str, story_theme: str = "") -> None:
+    """
+    Creates an AI-generated story and generates an audiofile of the story.
+    The audiofile is stored in same folder as file under folder /Audiofiles generated.
+    Ensure the cwd contains a .env file with both anthropic and elevenlabs api-keys.
+        Look at CODE_STRUCTURE.md for more information.
+    
+    Parameters
+    ---
+    target_lang: str
+        language in which to generate the story
+    story_name: str
+        name of the story, also used as paradigm name
+    story_theme: str, default = ""
+        theme of the story. If left blank, the story is generated
+        native to the language spesified    
+    """
     output_dir = Path(__file__).parent / "Audiofiles generated"
     output_dir.mkdir(parents=True, exist_ok=True)
     output_path = output_dir / f"{story_name}.wav"
@@ -104,7 +120,7 @@ def generate_story_and_sound(target_lang: str, story_name: str, story_theme: str
 
     story = _generate_story(client, story_theme, target_lang)
 
-    # Text to speech
+    # Text to speech, default = "en"
     language_code = LANGUAGE_CODES.get(target_lang, "en")
 
     url = f"https://api.elevenlabs.io/v1/text-to-speech/{VOICE_ID}?output_format=pcm_24000"

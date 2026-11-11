@@ -1,4 +1,5 @@
 {
+  "aktivaVersion": "2.1.0",
   "creationDate": 1786344090169,
   "isFavorite": false,
   "isPersonal": true,
@@ -10,14 +11,15 @@
     "timeToRepeat": 2000,
     "volumes": 130,
     "averageBlockLength": 20000,
-    "slices": 34
+    "slices": 34,
+    "description": {
+    "English": "Paradigm name\n\nDescription:\nAlternating AI-generated and backwards Audio , 20 seconds each;\n1 OFF + 6 cycles (B AB AB AB AB AB AB);\n\nBased on recommendations from ASFNR (American Society for Functional Neuroradiology). \n\n---\nInstructions:\nPlease instruct patients appropriately and conduct patient training to ensure patients understand their responsibilities!\nPatients will hear the story read. Intermittently there will be blocks of backwards audio. Instruct the subject to listen attentively throughout the task to both types of audio.\n---\nClick 'Run' if you are ready to scan, or 'Preview' to view without the scanner.\nRemember to start the paradigm before you start the scan."
+    }
   },
   "languages": [
     "English"
   ],
-  "description": {
-    "English": "Paradigm name\n\nDescription:\nAlternating AI-generated and backwards Audio , 20 seconds each;\n1 OFF + 6 cycles (B AB AB AB AB AB AB);\n\nBased on recommendations from ASFNR (American Society for Functional Neuroradiology). \n\n---\nInstructions:\nPlease instruct patients appropriately and conduct patient training to ensure patients understand their responsibilities!\nPatients will hear the story read. Intermittently there will be blocks of backwards audio. Instruct the subject to listen attentively throughout the task to both types of audio.\n---\nClick 'Run' if you are ready to scan, or 'Preview' to view without the scanner.\nRemember to start the paradigm before you start the scan."
-  },
+  
   "versions": [
     "VisualSystem",
     "VisualSystem-HD",

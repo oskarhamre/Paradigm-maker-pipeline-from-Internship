@@ -3,14 +3,27 @@ from pathlib import Path
 import warnings
 
 def splitAudio(
-        name:str,
+        name: str,
         nBlocks: int = 6,
         blockLen: int = 20_000
-):
+) -> None:
+    """
+    Resamples the audiofile and splits it into a spesified number of blocks,
+    reversing every split and saving every audiofile in the paradigm folder
+    under /Audio.
+
+    Parameters
+    ---
+    name: str
+        name of the story
+    nBlocks: int, default=6
+        number of blocks in which to split the audiofile
+    blockLen: int, default=20_000
+        length of each block in milliseconds    
+    """
     BASE_DIR = Path(__file__).parent
     fileName = f"{name}.wav"
 
-    # checks story name is without spaces
     if " " in name:
         warnings.warn(
             "Story name cannot contain space. Whitespace is being removed.",
